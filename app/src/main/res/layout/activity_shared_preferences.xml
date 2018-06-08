@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SharedPreferencesActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"/>
+
+    <EditText
+        android:id="@+id/edtIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="number" />
+
+    <Switch
+        android:id="@+id/swVivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vivo?"/>
+
+    <Button
+        android:id="@+id/btSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:onClick="salvarPreferences"/>
+    <Button
+        android:id="@+id/btApagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apagar Shared Preferences"
+        android:onClick="apagarPreferences"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Formas de store</string>
+    <string name="name">nome</string>
+    <string name="age">idade</string>
+    <string name="live">vivo</string>
+
+</resources>
